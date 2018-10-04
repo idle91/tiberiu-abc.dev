@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projet_ennoce1", "project_ennoce1\projet_ennoce1.csproj", "{D9198B78-D5E2-476B-882A-DD737A9440C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nom", "..\labyrinthe\nom\nom.csproj", "{DD8A4EAD-0483-4BA7-A183-DAB76EE69E2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "age", "age\age.csproj", "{C7C84F66-8A3C-4DA9-A6BF-5565E4F2AE7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9198B78-D5E2-476B-882A-DD737A9440C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9198B78-D5E2-476B-882A-DD737A9440C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9198B78-D5E2-476B-882A-DD737A9440C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9198B78-D5E2-476B-882A-DD737A9440C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD8A4EAD-0483-4BA7-A183-DAB76EE69E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD8A4EAD-0483-4BA7-A183-DAB76EE69E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD8A4EAD-0483-4BA7-A183-DAB76EE69E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD8A4EAD-0483-4BA7-A183-DAB76EE69E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7C84F66-8A3C-4DA9-A6BF-5565E4F2AE7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C84F66-8A3C-4DA9-A6BF-5565E4F2AE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C84F66-8A3C-4DA9-A6BF-5565E4F2AE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C84F66-8A3C-4DA9-A6BF-5565E4F2AE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
