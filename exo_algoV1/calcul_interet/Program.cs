@@ -10,10 +10,14 @@ namespace calcul_interet
     {
         static void Main(string[] args)
         {
-            double S;        //S: somme initial placé
-            int n;         // Nombre d'année
-            double i;       // Taux d'intêret annuel en %
-            int Reponse = 0;          // réponse de l'utilisateur
+            double S;
+            //S: somme initial placé
+            int n;
+            // Nombre d'année
+            double i;
+            // Taux d'intêret annuel en %
+            int Reponse = 0;
+            // réponse de l'utilisateur
             double valeuracquise;
             bool testnb;
 
