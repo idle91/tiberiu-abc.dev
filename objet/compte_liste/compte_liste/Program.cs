@@ -23,9 +23,10 @@ namespace compte_liste
 
             b.CompteSup();
 
+            b.RendCompte(1245);
 
 
-
+            //b.Transfert(1, 1245, 1000);
 
             Console.ReadLine();
         }

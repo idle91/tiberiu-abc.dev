@@ -86,30 +86,30 @@ namespace jour_de_la_semaine
             }
             reste7 = (annee+ resultat4 + valeurMois + jours) % 7;
             Console.WriteLine(" Le resultat de la reste est :"+ reste7);
-            switch (reste7)
-            {
-                case 1:
-                    Console.WriteLine(" C'est dimanche !");
-                    break;
-                case 2:
-                    Console.WriteLine(" C'est lundi !");
-                    break;
-                case 3:
-                    Console.WriteLine(" C'est mardi !");
-                    break;
-                case 4:
-                    Console.WriteLine(" C'est mercredi !");
-                    break;
-                case 5:
-                    Console.WriteLine(" C'est jeudi !");
-                    break;
-                case 6:
-                    Console.WriteLine(" C'est vendredi !");
-                    break;
-                case 7:
-                    Console.WriteLine(" C'est samedi !");
-                    break;
-            }
+            //switch (reste7)
+            //{
+            //    case 1:
+            //        Console.WriteLine(" C'est dimanche !");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine(" C'est lundi !");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine(" C'est mardi !");
+            //        break;
+            //    case 4:
+            //        Console.WriteLine(" C'est mercredi !");
+            //        break;
+            //    case 5:
+            //        Console.WriteLine(" C'est jeudi !");
+            //        break;
+            //    case 6:
+            //        Console.WriteLine(" C'est vendredi !");
+            //        break;
+            //    case 7:
+            //        Console.WriteLine(" C'est samedi !");
+            //        break;
+            //}
           Console.ReadKey();
            
         }

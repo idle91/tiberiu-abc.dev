@@ -15,7 +15,7 @@ namespace valeur_absolue2
             Console.WriteLine(" Introduisez la valeur de x :");
             x = int.Parse(Console.ReadLine());
             y = Math.Abs(x);
-            Console.WriteLine(" La valeur absolue est = {0:##,###}", y);
+            Console.WriteLine(" La valeur absolue est = {0:##,##0}", y);
             Console.ReadKey();
         }
     }

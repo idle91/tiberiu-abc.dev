@@ -31,7 +31,8 @@ namespace kiloutou
         }
         public void Affichage()
         {
-            Console.WriteLine("Marque : " + marque + " modele : " + modele + " numero serie " + numSerie);
+            Console.WriteLine("Marque : " + marque + " Modele : " + modele + " Numero serie " + numSerie);
+            Console.WriteLine();
         }
 
 

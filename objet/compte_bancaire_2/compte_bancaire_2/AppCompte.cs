@@ -20,8 +20,28 @@ namespace compte_bancaire_2
 
             b.AjouteCompte(1, "tib", 999999, -1000000);
             b.AfficherComptes();
-
+            Console.WriteLine("Le compte au solde maximum est : \n");
             b.CompteSup();
+            Console.WriteLine("---------------------------------------------------------------------------------------------");
+
+
+            Console.WriteLine("Le compte trouve en fonction de son numéro est : \n");
+            Compte c = b.RendCompte(1245);
+            if (c != null)
+            {
+                Console.WriteLine(c);
+            }
+            else
+            {
+                Console.WriteLine("Le compte n'est pas trouvé !");
+
+            }
+            Console.WriteLine("---------------------------------------------------------------------------------------------");
+
+
+            b.Transfer(11633,32345,2000);
+
+
 
             Console.WriteLine("\n\n----------------------------------------GAME OVER--------------------------------------------");
 

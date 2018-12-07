@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace compte_bancaire_2
 {
-    class Compte
+    class Compte : Banque
     {
         private int numero;
         private string nom;
@@ -37,6 +37,7 @@ namespace compte_bancaire_2
         {
             Random aleas = new Random();
             numero = aleas.Next(10000, 100000);
+            numero = 0;
             nom = "Compte Technique";
             solde = 0;
             decouvertAutorise = 0;

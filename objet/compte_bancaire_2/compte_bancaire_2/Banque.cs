@@ -21,7 +21,7 @@ namespace compte_bancaire_2
         public Banque()
         {
 
-            LesComptes = new Compte[20];        //crée le tableau 
+            LesComptes = new Compte[8];        //crée le tableau 
             this.NbComptes = 0;                 //initialise à 0 le nombre de comptes
         }
 
@@ -75,20 +75,20 @@ namespace compte_bancaire_2
 
         public void sortArrayStatic()
         {
-                LesComptes = LesComptes.OrderByDescending((a => a.Solde)).ToArray();
-                foreach (Compte item in LesComptes)
-                {
-                    Console.WriteLine(item);
-                }
+            LesComptes = LesComptes.OrderByDescending((a => a.Solde)).ToArray();
+            foreach (Compte item in LesComptes)
+            {
+                Console.WriteLine(item);
+            }
         }
 
         public void CompteSup()
         {
-            Compte monCompte=null;
+            Compte monCompte = null;
             double max = 0;
             foreach (Compte leCompte in LesComptes)
             {
-                if (leCompte!=null && leCompte.Solde>max)
+                if (leCompte != null && leCompte.Solde > max)
                 {
                     monCompte = leCompte;
                     max = leCompte.Solde;
@@ -97,9 +97,62 @@ namespace compte_bancaire_2
             Console.WriteLine(monCompte.ToString());
         }
 
+        public Compte RendCompte(int _numero)
+        {
+            foreach (Compte item in LesComptes)
+            {
+                if (item != null && _numero == item.Numero)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
 
+        public void Transfer(int nrCompte1, int nrCompte2, double _montant)
+        {
+            double soldeCompte1 = 0;
+            int indexCompte1 = 0;
+            bool test = false;
+
+            for (int i = 0; i < LesComptes.Length; i++)
+            {
+                if (LesComptes[i] != null && LesComptes[i].Numero == nrCompte1)
+                {
+                    soldeCompte1 = LesComptes[i].Solde;
+                    indexCompte1 = i;                   
+                }
+            }
+            if (soldeCompte1 >= _montant && !test)
+            {
+                for (int i = 0; i < LesComptes.Length; i++)
+                {
+                    if (LesComptes[i] != null && LesComptes[i].Numero == nrCompte2)
+                    {
+                        LesComptes[i].Transferer(_montant, LesComptes[indexCompte1]);
+                        Console.WriteLine("Transfert effectué !");
+                        test = true;
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Transfert impossible");
+            }
+
+
+
+
+
+
+
+
+
+        }
     }
 }
+
+
 
 
 

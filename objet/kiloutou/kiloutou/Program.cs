@@ -33,6 +33,8 @@ namespace kiloutou
             listeVoiture.Add(maVoiture6);
 
             Console.WriteLine("Liste voiture 1 non trier :");
+            Console.WriteLine();
+
             //recouperer les voitures non trier
             foreach (voiture item in listeVoiture)
             {
@@ -41,7 +43,7 @@ namespace kiloutou
             do
             {
 
-                Console.WriteLine("-------------------------------------------------------------");
+                Console.WriteLine();
 
                 do
                 {
@@ -76,8 +78,10 @@ namespace kiloutou
             } while (!test2); //choixUtilisateur != 1 && choixUtilisateur != 2 && choixUtilisateur != 3
 
             // afficher les voitures trier
-            Console.WriteLine("-------------------------------------------------------------");
+            Console.WriteLine();
             Console.WriteLine("Liste voiture 1 trier :");
+            Console.WriteLine();
+
             foreach (voiture item in listeVoiture)
             {
                 item.Affichage();
@@ -110,6 +114,8 @@ namespace kiloutou
             listeVoiture2.Add(maVoiture);
 
             Console.WriteLine("Liste voiture 2 non trier:");
+            Console.WriteLine();
+
             foreach (voiture2 item in listeVoiture2)
             {
 
@@ -121,7 +127,7 @@ namespace kiloutou
             test2 = false;
             do
             {
-                Console.WriteLine("-------------------------------------------------------------");
+                Console.WriteLine();
                 do
                 {
                     Console.WriteLine("Veuillez taper par quelle ordre voulez-vous trier vos voitures :");
@@ -158,8 +164,10 @@ namespace kiloutou
                 }
 
             } while (!test2);
-            Console.WriteLine("-------------------------------------------------------------");
+            Console.WriteLine();
             Console.WriteLine("Liste voiture 2 trier:");
+            Console.WriteLine();
+
             foreach (voiture2 item in listeVoiture2)
             {
 

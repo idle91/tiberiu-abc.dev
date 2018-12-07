@@ -21,15 +21,23 @@ namespace exo_nr_1
             {
                 if (tableau[i] == x)
                 {
-                    Console.WriteLine(" Le numero choisit (" + x + ") se trouve à la position "+ (i+1)+ " .");
-                    test = true;
+                    Console.WriteLine(" Le numero choisit (" + x + ") se trouve à la position " + (i + 1) + " .");
+                    //test = true;
                     break;
                 }
+                else
+                {
+                                    Console.WriteLine(" Le numero choisit n'est pas dans le tableau !");
+                    break;
+
+                }
+
             }
-            if (!test)
-            {
-                Console.WriteLine(" Le numero choisit n'est pas dans le tableau !");
-            }
+
+            //if (!test)
+            //{
+
+            //}
             Console.ReadKey();
         }
     }

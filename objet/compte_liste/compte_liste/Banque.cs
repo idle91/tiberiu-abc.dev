@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace compte_liste
 {
-    class Banque : Compte
+    class Banque
     {
         private List<Compte> LesComptes;
 
@@ -40,7 +40,7 @@ namespace compte_liste
         {
             foreach (Compte item in LesComptes)
             {
-                Console.WriteLine(item+"\t");
+                Console.WriteLine(item + "\t");
 
             }
             Console.WriteLine("---------------------------------------------------------------------------------------------");
@@ -83,16 +83,52 @@ namespace compte_liste
 
         }
 
-        public bool Transfer(Compte compte, Compte _autreCompte, double _montant)
+
+        public Compte RendCompte(int _numero)
         {
-            if (Debiter (_montant))
+            LesComptes = LesComptes.FindAll(a => a.Numero == _numero);
+
+            foreach (Compte item in LesComptes)
             {
-                _autreCompte.Crediter(_montant);
-                return true;
+                if (_numero == item.Numero)
+                {
+                    Console.WriteLine(item);
+                    return item;
+                }
             }
-            return false;
+
+            Console.WriteLine("Le compte n'est pas trouvé !");
+            return null;
         }
 
+        //public void Transfert(int compt1, int compte2, double _montant)
+        //{
+        //    double soldeCompte1 = 0;
+        //    int index=0;
+        //    foreach (Compte a in LesComptes)
+        //    {
+        //        if (a.Numero == compt1)
+        //        {
+        //            soldeCompte1 = a.Solde;
+
+        //        }
+        //    }
+        //    if (soldeCompte1 >= _montant)
+        //    {
+        //        foreach (Compte item in LesComptes)
+        //        {
+        //            if (item.Numero == compte2)
+        //            {
+        //                //item.Transferer(_montant, 
+        //                Console.WriteLine("Transfert effectué !");
+        //            }
+        //        }
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Transfert impossible");
+        //    }
+        //}
 
     }
 }

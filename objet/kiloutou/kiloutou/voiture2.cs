@@ -25,7 +25,9 @@ namespace kiloutou
         }
         public void Affichage2()
         {
-            Console.WriteLine("Marque : " + Marque + " modele : " + Modele + " numero serie " + NumSerie+ "date de mise en circulation: "+ MiseEnCirculation.ToString("d"));
+            Console.WriteLine("Marque : " + Marque + " Modele : " + Modele + " Numero serie " + NumSerie+ " Date de mise en circulation: "+ MiseEnCirculation.ToString("d"));
+            Console.WriteLine();
+
         }
 
     }
